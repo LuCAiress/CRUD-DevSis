@@ -33,9 +33,9 @@ if (isset($_SESSION['nome'])) {
                                     <div class="card-header"><h3 class="text-center font-weight-light my-4">Login</h3></div>
                                     <div class="card-body">
                                         <form method="post", action="login.php">
-                                        <div> 
-                                            <?php echo isset($_REQUEST['mensagem']) ? $_REQUEST['mensagem'] : ''  ?> 
-                                        </div>
+                                            <div> 
+                                                <?php echo isset($_REQUEST['mensagem']) ? $_REQUEST['mensagem'] : ''  ?> 
+                                            </div>
                                             <div class="form-floating mb-3">
                                                 <input class="form-control" name="email" type="email"/>
                                                 <label for="inputEmail">Email</label>
