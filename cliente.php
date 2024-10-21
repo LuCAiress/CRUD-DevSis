@@ -43,8 +43,7 @@ $logado = $_SESSION['nome'];
         $stmt = $conexao->prepare($sqlConsulta);
         $stmt->bindParam(':id', $id);
         $stmt->execute();
-        $result = $stmt->fet
-        (PDO::FETCH_OBJ);
+        $result = $stmt->fetch(PDO::FETCH_OBJ);
     }
 ?>
 
